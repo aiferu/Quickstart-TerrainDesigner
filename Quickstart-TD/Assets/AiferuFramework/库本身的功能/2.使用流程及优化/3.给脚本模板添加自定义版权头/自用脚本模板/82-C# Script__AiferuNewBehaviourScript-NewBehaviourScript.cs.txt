@@ -1,0 +1,40 @@
+//
+//  #SCRIPTNAME##FILEEXTENSION#
+//  #PROJECTNAME#
+//
+//  Created by #SMARTDEVELOPERS# on #CREATIONDATE#.
+//
+//
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+ 
+/// <summary>
+/// 
+/// </summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    #region Field
+ 
+    #endregion
+ 
+    #region Property
+ 
+    #endregion
+ 
+    #region UnityOriginalEvent
+    void Start()
+    {
+        
+    }
+ 
+    void Update()
+    {
+        
+    }
+    #endregion
+ 
+    #region Function
+ 
+    #endregion
+}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabe8635ad96cce439b3c9e6dc614ddf, type: 3}
+  m_Name: LongSoundsAudioData
+  m_EditorClassIdentifier: 
+  Ambisonic: 0
+  loadInBackground: 0
+  AndroidSampleSettings:
+    loadType: 0
+    sampleRateSetting: 2
+    sampleRateOverride: 22050
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  IosSampleSettings:
+    loadType: 0
+    sampleRateSetting: 2
+    sampleRateOverride: 22050
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  judgeMentConditionItemConfigs:
+  - {fileID: 11400000, guid: 1bc14f38c54cda54eb64a9922b0e986e, type: 2}
+  - {fileID: 11400000, guid: 514f0e8c36ddaf242bce6a2c593957be, type: 2}
+  - {fileID: 11400000, guid: ccacaa9f47e44d842a3d725e86819987, type: 2}
+  - {fileID: 11400000, guid: 294e7669fa053f148837b884aae2a60b, type: 2}
+  priority: 1

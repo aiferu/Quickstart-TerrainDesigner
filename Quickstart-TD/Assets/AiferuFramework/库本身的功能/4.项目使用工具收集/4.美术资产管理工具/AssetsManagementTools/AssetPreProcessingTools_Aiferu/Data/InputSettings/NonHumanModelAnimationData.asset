@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcc4f69fe15404479d5df9bca89ebbd, type: 3}
+  m_Name: NonHumanModelAnimationData
+  m_EditorClassIdentifier: 
+  ConvertUnits: 1
+  BakeAxisConversion: 0
+  ImportBlendShapes: 0
+  ImportVisibility: 0
+  ImportCameras: 0
+  ImportLight: 0
+  ReadWriteEnable: 1
+  SwapUVs: 0
+  GenerateLightmapUVs: 0
+  ModelImporterAnimationType: 2
+  InputAnimation: 1
+  ModelImporterMaterialImportMode: 2
+  materialLocation: 1
+  judgeMentConditionItemConfigs:
+  - {fileID: 11400000, guid: ee9ac4733b8995e45985065d9eda4e1e, type: 2}
+  - {fileID: 11400000, guid: f8d7cef570153a64db6cc35e16943c14, type: 2}
+  - {fileID: 11400000, guid: f68ba467f50a0604e9171a61cff3d58a, type: 2}
+  - {fileID: 11400000, guid: f23b12c959fc21b4fb6961706ad549e5, type: 2}
+  - {fileID: 11400000, guid: 2b753f5444def07438b52d7982ee46f3, type: 2}
+  priority: 1

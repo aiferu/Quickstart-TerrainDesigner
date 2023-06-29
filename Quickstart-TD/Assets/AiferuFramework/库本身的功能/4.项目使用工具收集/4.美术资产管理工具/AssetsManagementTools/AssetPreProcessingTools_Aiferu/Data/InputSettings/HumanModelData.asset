@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcc4f69fe15404479d5df9bca89ebbd, type: 3}
+  m_Name: HumanModelData
+  m_EditorClassIdentifier: 
+  ConvertUnits: 1
+  BakeAxisConversion: 0
+  ImportBlendShapes: 0
+  ImportVisibility: 0
+  ImportCameras: 0
+  ImportLight: 0
+  ReadWriteEnable: 1
+  SwapUVs: 0
+  GenerateLightmapUVs: 0
+  ModelImporterAnimationType: 2
+  InputAnimation: 0
+  ModelImporterMaterialImportMode: 2
+  materialLocation: 1
+  judgeMentConditionItemConfigs:
+  - {fileID: 11400000, guid: da164417ad6ce294b9ae9725599c6075, type: 2}
+  - {fileID: 11400000, guid: c31fe68b8e9c9e44cb6b3b2ffe43b3a9, type: 2}
+  - {fileID: 11400000, guid: a30a08daf2f52a44e9431c04549887c7, type: 2}
+  - {fileID: 11400000, guid: f5b228e5dd00dfc44924d1851013a101, type: 2}
+  priority: 4

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ed92a1050117743889e49cd4b1c19d, type: 3}
+  m_Name: NormalTextureData 1
+  m_EditorClassIdentifier: 
+  enableTextureType: 1
+  TextureType: 1
+  MaxTextureSize: 256
+  EnableReadWrite: 0
+  EnableMipmap: 1
+  EnableMipMapStreaming: 0
+  AlphaSource: 0
+  AlphaISTransParency: 0
+  ForceFilterMode: 0
+  FilterMode: 1
+  AnisoLevel: 1
+  ForceOverride: 1
+  Format: 48
+  PCFormat: 29
+  judgeMentConditionItemConfigs:
+  - {fileID: 11400000, guid: aa631e5ec5ea01f4997b4819b9a65283, type: 2}
+  - {fileID: 11400000, guid: 0841171b29db23d4a8f18af0d8c61ba7, type: 2}
+  - {fileID: 11400000, guid: 5deb29dba02e4ef418c20c59aa06e211, type: 2}
+  - {fileID: 11400000, guid: bf8d249914b59484c8053b33ccaccb49, type: 2}
+  priority: 3

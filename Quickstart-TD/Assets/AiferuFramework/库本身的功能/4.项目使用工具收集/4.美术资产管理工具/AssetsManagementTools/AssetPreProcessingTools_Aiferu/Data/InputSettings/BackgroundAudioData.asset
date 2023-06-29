@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabe8635ad96cce439b3c9e6dc614ddf, type: 3}
+  m_Name: BackgroundAudioData
+  m_EditorClassIdentifier: 
+  Ambisonic: 1
+  loadInBackground: 1
+  AndroidSampleSettings:
+    loadType: 2
+    sampleRateSetting: 2
+    sampleRateOverride: 22050
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  IosSampleSettings:
+    loadType: 2
+    sampleRateSetting: 2
+    sampleRateOverride: 22050
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  judgeMentConditionItemConfigs:
+  - {fileID: 11400000, guid: e73c8bc19039b5d40ba6a856b1f96083, type: 2}
+  - {fileID: 11400000, guid: 298e24df6e158604e84064b237408f4b, type: 2}
+  - {fileID: 11400000, guid: 8cea48eeac533604b8f478c60d7979da, type: 2}
+  - {fileID: 11400000, guid: 83f60501c8a16ee499af4ad0ec991214, type: 2}
+  priority: 5

@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="flex-basis: auto; flex-grow: 0; height: 50px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+        <ui:Label text="AssetsPreprocessingTools" display-tooltip-when-elided="true" style="justify-content: space-between; align-items: center; -unity-font-style: bold; -unity-text-align: middle-center;" />
+        <ui:VisualElement style="flex-direction: row; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-text-outline-width: 0;">
+            <ui:Button text="NewInputSetting" display-tooltip-when-elided="true" name="Button_NewInputSetting" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; flex-shrink: 1; width: auto; flex-direction: row;">
+        <ui:VisualElement style="flex-shrink: 1; flex-grow: 0; height: auto; width: 240px; border-left-width: 1px; border-right-width: 1px; border-top-width: 0; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+            <ui:Label text="Mesh导入设置" display-tooltip-when-elided="true" style="-unity-font-style: bold; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            <ui:ListView focusable="true" name="ListView_InputSettings_Mesh" style="flex-grow: 1;" />
+            <ui:Label text="Texture导入设置" display-tooltip-when-elided="true" style="-unity-font-style: bold; border-left-width: 0; border-right-width: 0; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            <ui:ListView focusable="true" name="ListView_InputSettings_Texture" style="flex-grow: 1;" />
+            <ui:Label text="Audio导入设置" display-tooltip-when-elided="true" style="-unity-font-style: bold; border-left-width: 0; border-right-width: 0; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            <ui:ListView focusable="true" name="ListView_InputSettings_Audio" style="flex-grow: 1;" />
+            <ui:Button text="Refresh" display-tooltip-when-elided="true" name="Button_Refresh" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 0; border-right-width: 1px; border-top-width: 0; border-bottom-width: 1px;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label text="判断条件" display-tooltip-when-elided="true" style="-unity-font-style: bold; flex-shrink: 1; flex-grow: 1;" />
+                <ui:Label text="文件类型:Model" display-tooltip-when-elided="true" name="Label_FileType" style="flex-shrink: 1; flex-grow: 1; -unity-font-style: bold;" />
+                <uie:IntegerField label="优先级:" value="42" name="IntegerField_Priority" style="-unity-font-style: bold;" />
+                <ui:Button text="Add" display-tooltip-when-elided="true" name="Button_AddJudgeMentConditionItemConfig" style="align-items: stretch; justify-content: center; flex-direction: column; -unity-text-align: middle-center; white-space: nowrap;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="VE_JudgementCondition" style="flex-grow: 1;">
+                <ui:ListView focusable="true" name="ListView_JudgementCondition" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="height: 20px; border-left-width: 1px; border-right-width: 1px; border-top-width: 0; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); flex-direction: row; align-items: stretch; justify-content: center;">
+        <ui:Button text="Clear" display-tooltip-when-elided="true" name="Button_Clear" />
+        <ui:Button text="Save" display-tooltip-when-elided="true" name="Button_Save" style="flex-shrink: 0.5; flex-grow: 0.5;" />
+    </ui:VisualElement>
+</ui:UXML>

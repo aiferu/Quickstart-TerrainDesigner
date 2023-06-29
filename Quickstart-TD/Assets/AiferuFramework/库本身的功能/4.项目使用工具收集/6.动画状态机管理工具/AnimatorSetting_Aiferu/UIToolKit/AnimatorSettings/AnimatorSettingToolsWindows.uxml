@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="flex-direction: row; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+        <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
+            <ui:Button text="CreateAnimator" display-tooltip-when-elided="true" name="Button_CreateAnimator" />
+            <ui:Button text="SelectBaseData" display-tooltip-when-elided="true" name="Button_SelectBaseData" />
+            <ui:Button text="CreateAnimationClip" display-tooltip-when-elided="true" name="Button_CreateAnimationClip" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row-reverse; flex-grow: 1;">
+            <ui:Button text="CrearAnimator" display-tooltip-when-elided="true" name="Button_CrearAnimator" />
+            <ui:Button text="ClearData" display-tooltip-when-elided="true" name="Button_ClearData" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement>
+            <ui:VisualElement style="width: 200px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); flex-grow: 1;">
+                <ui:Label text="SkinProfabListView" display-tooltip-when-elided="true" style="width: 100px; font-size: 10px;" />
+                <ui:Label text="Count:0" display-tooltip-when-elided="true" name="Label_SkinProfabItemCount" style="width: 100px; font-size: 10px;" />
+                <ui:ListView focusable="true" name="ListView_SkinProfabData" style="width: 200px; flex-grow: 1; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement style="flex-grow: 0;">
+                <ui:Label text="对象信息" display-tooltip-when-elided="true" />
+                <ui:TextField picking-mode="Ignore" label="名称" value="filler text" name="TextField_Name" />
+                <uie:EnumField label="动画状态机模板" value="哈哈哈,哈哈哈" name="EnumField_AnimatorTemplate" focusable="true" />
+                <uie:EnumField label="动画分组" value="Center" name="EnumField_AnimationGraph" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="RefreshData" display-tooltip-when-elided="true" name="Button_RefreshData" />
+</ui:UXML>

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcc4f69fe15404479d5df9bca89ebbd, type: 3}
+  m_Name: StaticModelData
+  m_EditorClassIdentifier: 
+  ConvertUnits: 1
+  BakeAxisConversion: 0
+  ImportBlendShapes: 0
+  ImportVisibility: 0
+  ImportCameras: 0
+  ImportLight: 0
+  ReadWriteEnable: 0
+  SwapUVs: 0
+  GenerateLightmapUVs: 1
+  ModelImporterAnimationType: 0
+  InputAnimation: 0
+  ModelImporterMaterialImportMode: 2
+  materialLocation: 1
+  judgeMentConditionItemConfigs:
+  - {fileID: 11400000, guid: 492c02e0985782845a16825d75c18b14, type: 2}
+  - {fileID: 11400000, guid: c5a0fec8dbd76de44896481665177a4e, type: 2}
+  - {fileID: 11400000, guid: 067c4dbcdf7e9114d97ae20025b12918, type: 2}
+  priority: 5

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ed92a1050117743889e49cd4b1c19d, type: 3}
+  m_Name: LightMapTextureData
+  m_EditorClassIdentifier: 
+  enableTextureType: 1
+  TextureType: 6
+  MaxTextureSize: 2048
+  EnableReadWrite: 0
+  EnableMipmap: 0
+  EnableMipMapStreaming: 0
+  AlphaSource: 1
+  AlphaISTransParency: 0
+  ForceFilterMode: 0
+  FilterMode: 1
+  AnisoLevel: 1
+  ForceOverride: 1
+  Format: 49
+  PCFormat: 29
+  judgeMentConditionItemConfigs:
+  - {fileID: 11400000, guid: 9c05e35f92c4d5b4085817a16a32456c, type: 2}
+  - {fileID: 11400000, guid: e81aaae0ef3faf2448b6150cedae6c13, type: 2}
+  priority: 1

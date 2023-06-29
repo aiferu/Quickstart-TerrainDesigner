@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbefe9fe1c69e8947a18d9494fc0384f, type: 3}
+  m_Name: AnimatorSettingToolsBaseData
+  m_EditorClassIdentifier: 
+  AnimationClipNames:
+  - BufferB
+  - BufferF
+  - BufferL
+  - BufferR
+  - EmoDown
+  - EmoStay
+  - EmoUp
+  - Idle
+  - ImmortalDown
+  - ImmortalStay
+  - ImmortalUp
+  - LaunchDown
+  - LaunchStay
+  - LaunchUp
+  - SitDown
+  - SitStay
+  - SitUp
+  - SleepDownB
+  - SleepDownF
+  - SleepDownL
+  - SleepDownR
+  - SleepStayB
+  - SleepStayF
+  - SleepStayL
+  - SleepStayR
+  - SleepUpB
+  - SleepUpF
+  - SleepUpL
+  - SleepUpR
+  - SoakFeet
+  - WalkB
+  - WalkF
+  - WalkL
+  - WalkR
+  - Wave
+  - Dig
+  - Hold3
+  - hold1
+  - Hold2
+  - Jump
+  - Pick
+  - Run
+  - Write
+  - Walk
+  - SleepDown
+  - SleepStay
+  - SleepUP
+  - "\u4E3E\u724C1"
+  animatorTemplatePath:
+  - "Assets/\u6D4B\u8BD5\u7528\u5DE5\u7A0B\u7D20\u6750/AAA_Animators/Template/FansTemplate.controller"
+  - "Assets/\u6D4B\u8BD5\u7528\u5DE5\u7A0B\u7D20\u6750/AAA_Animators/Template/PlayTemplate.controller"
+  animationGroup:
+  - C_L_CPFF_0194_AviationTeenager
+  - C_L_NINA_0204_Angell
+  - C_L_Unicorn_0200_BluishViolet
+  - C_L_LowPoly
+  - C_L_Fans_0254_GirlBumpPling
+  - C_L_Fans_0263_Swordsman
+  - C_L_Fans_0264_Assassin
+  - C_L_Fans_0272_YiYi
+  - C_L_Fans_0274_YaoYao
+  - C_L_Fans_0281_Elves
+  - C_L_Fans_0289_RedPanda
+  - C_L_Fans_0290_Fox
+  - C_L_Universe_0206_Moon
+  - C_L_SINDY_0222_TiredTiger
+  - C_Constellation_0231_Aries
+  - C_L_Fans_0290_Fox
