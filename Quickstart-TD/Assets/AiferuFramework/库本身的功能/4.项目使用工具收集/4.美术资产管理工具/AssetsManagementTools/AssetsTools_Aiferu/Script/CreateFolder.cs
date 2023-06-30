@@ -13,6 +13,7 @@ using UnityEditor;
 using System.IO;
 using UnityEditor.SceneManagement;
 using UnityEditor.SearchService;
+using AiferuFramework.ArtBrushTool;
 
 namespace AiferuFramework.AssetsManagementTools
 {
@@ -163,19 +164,55 @@ namespace AiferuFramework.AssetsManagementTools
         }
 
 
-        [MenuItem("GameObject/AFramework/创建Scene架构对象")]
-        private static void CreateSceneArchitectureObject()
-        {
-            GameObject go1 = new GameObject("---------------[LayerName]---------------");
-            GameObject go2 = new GameObject("======[LayerName]_ART======");
-            GameObject go3 = new GameObject("======[LayerName]_Interaction======");
-            GameObject go2_1 = new GameObject("====Enviroment====");
-            go2_1.transform.parent = go2.transform;
-            GameObject go2_2 = new GameObject("====Render====");
-            go2_2.transform.parent = go2.transform;
-            GameObject go4 = new GameObject("======[LayerName]_Audio======");
-        }
+        
 
+
+        public class CreateSceneArchitectureObjectEW : EditorWindow
+        {
+            private static string layerName = "[LayerName]";
+            [MenuItem("GameObject/AFramework/创建Scene架构对象")]
+            static void Open()
+            {
+                #region 窗口初始化
+                CreateSceneArchitectureObjectEW ewIns = (CreateSceneArchitectureObjectEW)EditorWindow.GetWindowWithRect(typeof(CreateSceneArchitectureObjectEW), new Rect(0, 0, 300, 100), false, "SetLayerName");
+                #endregion
+            }
+
+            private void OnGUI()
+            {
+                GUILayout.Space(20);
+                GUILayout.BeginHorizontal();
+                GUILayout.Space(20);
+                GUILayout.Label("LayerName:");
+                layerName = GUILayout.TextField(layerName);
+                GUILayout.Space(20);
+                GUILayout.EndHorizontal();
+                GUILayout.Space(20);
+                GUILayout.BeginHorizontal();
+                GUILayout.Space(20);
+                if (GUILayout.Button("Creation"))
+                {
+                    CreateSceneArchitectureObject(layerName);
+                    Close();
+                }
+                GUILayout.Space(20);
+                GUILayout.EndHorizontal() ;
+                GUILayout.Space(20);
+            }
+
+            private static void CreateSceneArchitectureObject(string layerName)
+            {
+                GameObject go1 = new GameObject("---------------"+layerName+"---------------");
+                GameObject go2 = new GameObject("======"+layerName+"_ART======");
+                GameObject go3 = new GameObject("======"+layerName+"_Interaction======");
+                GameObject go2_1 = new GameObject("====Enviroment====");
+                go2_1.transform.parent = go2.transform;
+                GameObject go2_2 = new GameObject("====Render====");
+                go2_2.transform.parent = go2.transform;
+                GameObject go4 = new GameObject("======"+layerName+"_Audio======");
+            }
+
+        }
         #endregion
 
         #region Function
