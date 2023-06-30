@@ -11,6 +11,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
+using UnityEditor.SceneManagement;
+using UnityEditor.SearchService;
+
 namespace AiferuFramework.AssetsManagementTools
 {
     /// <summary>
@@ -41,7 +44,16 @@ namespace AiferuFramework.AssetsManagementTools
             "00-ArtAssets",
             "00-ArtAssets/1stArtAssets",
             "00-ArtAssets/3rdArtAssets",
+            "00-ArtAssets/Assets_Scene_Profab",
             "01-Scenes",
+        };
+
+        private static string[] SceneProfabFolderNames = {
+            "00-ArtAssets/Assets_Scene_Profab/[SceneName]",
+            "00-ArtAssets/Assets_Scene_Profab/[SceneName]/Object",
+            "00-ArtAssets/Assets_Scene_Profab/[SceneName]/Obsolete",
+            "00-ArtAssets/Assets_Scene_Profab/[SceneName]/SceneArchitecture",
+            "00-ArtAssets/Assets_Scene_Profab/[SceneName]/SceneArchitecture/Base",
         };
 
         #endregion
@@ -103,6 +115,65 @@ namespace AiferuFramework.AssetsManagementTools
                 }
             }
 
+        }
+
+
+
+        [MenuItem("Assets/创建场景预制体存放路径", true)]
+        private static bool ValidateCreateSceneProfabFolder()
+        {
+            if (Selection.activeObject == null)
+            {
+                return false;
+            }
+            return Selection.activeObject.GetType() == typeof(SceneAsset);
+        }
+        /// <summary>
+        /// 创建场景预制体存放路径,会根据当前选中场景进行改变
+        /// </summary>
+        [MenuItem("Assets/创建场景预制体存放路径")]
+        private static void CreateSceneProfabFolder()
+        {
+            //获取当前选中文件的路径
+            if (GetSelectedFolderPath() != null)
+            {
+                string respath = Application.dataPath;
+                AlternateText(ref SceneProfabFolderNames, "[SceneName]", Selection.activeObject.name);
+                foreach (var resourcesFolderName in SceneProfabFolderNames)
+                {
+                    string path = respath + "/"+ resourcesFolderName;
+                    //判断文件夹是否存在
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                        Debug.Log("文件夹创建成功:" + path);
+                        AssetDatabase.Refresh();
+
+                    }
+                }
+            }
+        }
+
+        public static void AlternateText(ref string[]TextList,string oldText,string newText)
+        {
+            for (int i = 0; i < TextList.Length; i++)
+            {
+                TextList[i] = TextList[i].Replace(oldText, newText);
+            }
+        }
+
+
+        [MenuItem("GameObject/AFramework/创建Scene架构对象")]
+        private static void CreateSceneArchitectureObject()
+        {
+            GameObject go1 = new GameObject("---------------[LayerName]---------------");
+            GameObject go2 = new GameObject("======[LayerName]_ART======");
+            GameObject go3 = new GameObject("======[LayerName]_Interaction======");
+            GameObject go2_1 = new GameObject("====Enviroment====");
+            go2_1.transform.parent = go2.transform;
+            GameObject go2_2 = new GameObject("====Render====");
+            go2_2.transform.parent = go2.transform;
+            GameObject go4 = new GameObject("======[LayerName]_Audio======");
         }
 
         #endregion
