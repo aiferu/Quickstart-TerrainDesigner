@@ -22,6 +22,7 @@ namespace AiferuFramework.AssetsManagementTools
         private static string[] artResourcesFolderNames = {
             "Material",
             "Mesh",
+            "Mesh/StaticMesh",
             "Mesh/Human",
             "Mesh/Human/Animation",
             "Mesh/NonHuman",
@@ -33,7 +34,7 @@ namespace AiferuFramework.AssetsManagementTools
             "Audio/Sound",
             "Audio/Background",
             "Prefab",
-            "Shaders",
+            "Shader",
         };
 
         private static string[] ProjectFolderNames = {

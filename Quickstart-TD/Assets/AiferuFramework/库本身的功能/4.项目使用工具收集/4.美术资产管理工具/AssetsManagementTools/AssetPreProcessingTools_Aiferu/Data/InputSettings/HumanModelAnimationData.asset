@@ -21,7 +21,7 @@ MonoBehaviour:
   ReadWriteEnable: 1
   SwapUVs: 0
   GenerateLightmapUVs: 0
-  ModelImporterAnimationType: 2
+  ModelImporterAnimationType: 3
   InputAnimation: 1
   ModelImporterMaterialImportMode: 2
   materialLocation: 1
